@@ -1,0 +1,55 @@
+.combo {
+    background: var(--cor-de-fundo-combo);
+    background-image: url('../images/Banner-Pipoca.png');
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+}
+
+.combo__titulo {
+    width: 50%;
+    color: var(--cor-texto-claro);
+    font-family: var(--fonte-titulo);
+    font-size: var(--font-size-xxl);
+    font-weight: 400;
+    line-height: var(--line-height-xxl);
+}
+
+.combo__titulo-destaque {
+    color: var(--cor-texto-destaque);
+    font-size: var(--font-size-xxl);
+}
+
+.combo__conteudo {
+    max-width: var(--max-width-block);
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+@media screen and (max-width:1225px) {
+    .combo__conteudo {
+        padding: 0 var(--padding-xxl);
+    }
+
+    .combo__titulo, .combo__titulo-destaque {
+        font-size: var(--font-size-xl);
+        line-height: 3.5rem;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .combo__conteudo {
+        padding: 0 var(--padding-m);
+    }
+
+    .combo__titulo, .combo__titulo-destaque {
+        font-size: 2rem;
+        line-height: 2.5rem;
+    }
+}
+

@@ -1,0 +1,76 @@
+.lista-de-filmes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--gap-m);
+    list-style-type: none;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.item-da-lista-de-filmes {
+    flex: 1 1 32%;
+    max-width: 17em;
+    width: 100%;
+    height: 100%;
+    box-shadow: var(--box-shadow-card);
+
+    display: flex;
+    flex-direction: column;
+
+    cursor: pointer;
+}
+
+.filme-lista-imagem {
+    width: 100%;
+    object-fit: cover;
+}
+
+.conteudo-dos-filmes-da-lista  {
+    padding: var(--padding-s);
+    font-family: var(--fonte-texto);
+    flex-grow: 1;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.linha__lista-filme {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.descricao-dimensao__lista-filme, .dimensao-3d, .descricao-idade__lista-filme, .idade-livre {
+    padding: var(--padding-xs) var(--padding-s);
+    border-radius: var(--padding-xs);
+}
+.descricao-dimensao__lista-filme {
+    background-color: var(--cor-de-fundo-input);
+}
+
+.dimensao-3d {
+    background-color: var(--border-color);
+}
+
+.descricao-idade__lista-filme {
+    background-color: var(--cor-faixa-etaria);
+}
+
+.idade-livre {
+    background-color: var(--cor-faixa-etaria-livre);
+}
+
+.descricao__lista-filmes {
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-xs);
+}
+
+
+@media screen and (max-width:500px){
+    .descricao-idade__lista-filme {
+        font-size: .75rem;
+    }
+}
